@@ -40,9 +40,9 @@ public class Task0 {
     }
 
     private static void printArray(int[][][] threeDimensionalArray) {
-        for (int[][] planes : threeDimensionalArray) {
-            for (int[] rows : planes) {
-                System.out.printf("%20s", Arrays.toString(rows));
+        for (int[][] row : threeDimensionalArray) {
+            for (int[] plane : row) {
+                System.out.printf("%20s", Arrays.toString(plane));
             }
             System.out.println();
         }
