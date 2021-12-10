@@ -13,13 +13,13 @@ import java.util.Random;
 
 public class Task2 {
     public static void main(String[] args) {
-        int[][] firstMatrix = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}};
-        int[][] secondMatrix = {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}};
-        testMultiplyMatrices(firstMatrix, secondMatrix);
-
         int[][] firstRandomMatrix = createRandomMatrix(3, 7);
         int[][] secondRandomMatrix = createRandomMatrix(7, 5);
         testMultiplyMatrices(firstRandomMatrix, secondRandomMatrix);
+
+        int[][] firstMatrix = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}};
+        int[][] secondMatrix = {{1, 2, 3}, {1, 1, 1}, {0, 0, 0}, {2, 1, 0}};
+        testMultiplyMatrices(firstMatrix, secondMatrix);
     }
 
     private static int[][] createRandomMatrix(int numberOfRows, int numberOfColumns) {
